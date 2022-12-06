@@ -1,0 +1,121 @@
+.wrapper {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: none;
+    box-shadow: var(--box-shadow-2);
+  }
+}
+
+.mainIcon {
+  font-size: 3rem;
+}
+
+.mainIconWrap {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.darkMainIconWrap {
+  color: var(--color-background-theme);
+}
+.sales {
+  background: var(--color-primary);
+}
+.expenses {
+  background: var(--color-danger);
+}
+.income {
+  background: var(--color-success2);
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 0.7rem;
+}
+
+.title {
+  margin: 1rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+.totalSum {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.svg {
+  width: 7rem;
+  height: 7rem;
+  .circle {
+    stroke-linecap: round;
+    fill: none;
+    stroke-width: 14px;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+
+    transition: all 300ms ease;
+  }
+  .circleBackground {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+  }
+
+  .circleFill {
+    stroke: var(--color-primary);
+  }
+  .darkCircleBackground {
+    stroke: #181a1e;
+  }
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(0px, -2px);
+}
+
+.small {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.darkThemeText {
+  color: var(--color-dark-theme);
+}
+
+.darkWrapper {
+  background-color: var(--color-white-theme);
+  box-shadow: var(--box-shadow-theme);
+}

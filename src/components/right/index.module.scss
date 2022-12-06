@@ -1,0 +1,81 @@
+.title {
+  margin-bottom: 0.8rem;
+}
+
+.updates {
+  background-color: var(--color-white);
+  padding: var(--padding-1);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+  &:hover {
+    box-shadow: var(--box-shadow-2);
+  }
+}
+
+.darkThemeText {
+  color: var(--color-dark-theme);
+}
+.darkThemeUpdates {
+  box-shadow: var(--box-shadow-theme);
+  background-color: var(--color-white-theme);
+}
+
+.salesAnalytics {
+  margin-top: 1rem;
+  h2 {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--box-shadow-2);
+  }
+}
+
+.addProduct {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px dashed var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-info-light);
+    box-shadow: none;
+  }
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.addProductTitle {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 96%;
+    margin: 0 auto;
+  }
+}

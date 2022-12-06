@@ -1,0 +1,85 @@
+.wrapper {
+  height: 3.8rem;
+  width: 96%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+
+  gap: 1.8rem;
+  display: grid;
+  grid-template-columns: 14rem auto 23rem;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.logoWrap img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.close {
+  display: none;
+}
+
+.darkThemeText {
+  color: var(--color-dark-theme);
+}
+
+.darkThemeIcon {
+  color: var(--color-dark-theme);
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 7rem auto;
+  }
+  .logoText {
+    display: none;
+  }
+  .logoSection {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .logoWrap {
+    height: 2.8rem;
+    width: 2.8rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    background-color: #fff;
+
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100vw;
+    height: 2.8rem;
+    padding-top: 0rem;
+  }
+
+  .darkWrapper {
+    background-color: var(--color-white-theme);
+  }
+
+  .close {
+    display: inline;
+  }
+  .headerBtnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

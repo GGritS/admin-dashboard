@@ -1,0 +1,53 @@
+.dateLine {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  .searchButton {
+    cursor: pointer;
+    margin-left: 0.3rem;
+    font-size: 2.1rem;
+
+    border-radius: var(--border-radius-1);
+
+    background-color: var(--color-light);
+  }
+}
+
+.date {
+  display: inline-block;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-1);
+
+  padding: 0.5rem 1.6rem;
+  .dateInput {
+    background-color: transparent;
+    color: var(--color-dark);
+  }
+  .dateInputDark {
+    color: var(--color-dark-theme);
+  }
+}
+
+.darkThemeText {
+  color: var(--color-dark-theme);
+}
+
+.insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 96%;
+    margin: 0 auto;
+  }
+}

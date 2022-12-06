@@ -1,0 +1,34 @@
+.update {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  transition: all 300ms ease;
+  &:hover {
+    margin-left: 0.3rem;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.addedTime {
+  margin-top: 0.2rem;
+}
+
+.img {
+  border-radius: 50%;
+
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.darkThemeText {
+  color: var(--color-dark-theme);
+}
